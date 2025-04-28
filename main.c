@@ -58,12 +58,15 @@ int main (){
         }
         else if (state==2){                        //ServoCounterClockwise
             LoadLeft();
+            checkState();
         }
         else if (state==3){                         //ServoClockwise
             LoadRight();
+            checkState();
         }
         else if (state==4){                         //ServoCentre
             DoneLoading();
+            checkState();
         }
         else if (state==0){                         //Stop
             StopVehicle();
